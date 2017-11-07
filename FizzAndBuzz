@@ -1,3 +1,5 @@
+// My solution to FizzBuzz is pretty straightforward
+
 for (let number = 0; number < 101; number++)
 if ((number % 3 === 0) && (number % 5 === 0))
 	console.log('FizzBuzz')
@@ -7,3 +9,27 @@ else if (number % 5 === 0)
 	console.log ('Buzz');
 else 
 	console.log(number);
+	
+	
+/*
+I found a different answer to FizzBuzz on GitHub by paulirish that uses a ternary operator.
+I like it better than mine since it is more concise.
+
+for (var i = 1; i <= 100; i++) {
+  var f = i % 3 == 0, b = i % 5 == 0;
+  console.log(f ? b ? "FizzBuzz" : "Fizz" : b ? "Buzz" : i);
+}
+*/
+
+/*
+Eloquent JavaScript's author, Marijn Haverbeke's solution:
+
+for (var n = 1; n <= 100; n++) {
+  var output = "";
+  if (n % 3 == 0)
+    output += "Fizz";
+  if (n % 5 == 0)
+    output += "Buzz";
+  console.log(output || n);
+}
+*/
