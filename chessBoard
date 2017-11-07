@@ -1,35 +1,18 @@
 // Create a Chess Board that will increase in size vertically and horizontally.
-// Change size to any even number from 2 to 80.
+// This version meshes Eloquent JavaScript's author's version with mine.
+// Change size to any positive number (but for practical purposes it should be between 2 and 55).
+//     - less than 2 prints to output since it is just spaces.
+//     - more than 55 runs output onto multiple lines, this upper limit may change with console setttings.
 
-let i = 0;
 let size = 8;
-let chessBoard = function() {
-	while(i!==size/2) {
-		let spaceHash = ' #';
-        let hashSpace = '# '
-          console.log(spaceHash.repeat(size/2));
-          console.log(hashSpace.repeat(size/2));
-          i++;
-
-	}
-};
-chessBoard();
-
-/*
-Author Marijn Haverbeke's solution
-var size = 8;
-
-var board = "";
-
-for (var y = 0; y < size; y++) {
-  for (var x = 0; x < size; x++) {
-    if ((x + y) % 2 == 0)
-      board += " ";
-    else
-      board += "#";
+let chessBoard = '';
+for (let w = 0; w < size; w++) {
+  for (let b = 0; b < size; b++) {
+	if ((w + b) % 2 === 0)
+		chessBoard += '\u2B1C';
+	else
+		chessBoard += '\u2B1B';
   }
-  board += "\n";
-}
-
-console.log(board);
-*/
+ chessBoard += '\n';
+};
+console.log(chessBoard);
