@@ -1,5 +1,5 @@
 // Create a Chess Board that will increase in size vertically and horizontally.
-// This version meshes Eloquent JavaScript's author's version with mine.
+// This version meshes Eloquent JavaScript's author's version with my last iteration minus the prompt for a number.
 // Change size to any positive number (but for practical purposes it should be between 2 and 55).
 //     - less than 2 prints to output since it is just spaces.
 //     - more than 55 runs output onto multiple lines, this upper limit may change with console setttings.
@@ -16,3 +16,14 @@ for (let w = 0; w < size; w++) {
  chessBoard += '\n';
 };
 console.log(chessBoard);
+
+/* Output:
+⬜⬛⬜⬛⬜⬛⬜⬛
+⬛⬜⬛⬜⬛⬜⬛⬜
+⬜⬛⬜⬛⬜⬛⬜⬛
+⬛⬜⬛⬜⬛⬜⬛⬜
+⬜⬛⬜⬛⬜⬛⬜⬛
+⬛⬜⬛⬜⬛⬜⬛⬜
+⬜⬛⬜⬛⬜⬛⬜⬛
+⬛⬜⬛⬜⬛⬜⬛⬜
+*/
