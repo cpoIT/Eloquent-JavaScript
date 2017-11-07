@@ -1,5 +1,8 @@
+// Create a Chess Board that will increase in size vertically and horizontally.
+// Change size to any even number from 2 to 80.
+
 let i = 0;
-let size = 8
+let size = 8;
 let chessBoard = function() {
 	while(i!==size/2) {
 		let spaceHash = ' #';
