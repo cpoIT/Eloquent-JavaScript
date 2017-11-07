@@ -1,0 +1,13 @@
+let i = 0;
+let size = 8
+let chessBoard = function() {
+	while(i!==size/2) {
+		let spaceHash = ' #';
+        let hashSpace = '# '
+          console.log(spaceHash.repeat(size/2));
+          console.log(hashSpace.repeat(size/2));
+          i++;
+
+	}
+};
+chessBoard();
