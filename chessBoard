@@ -1,11 +1,11 @@
 let i = 0;
-let size = 8
+let size = 4;
 let chessBoard = function() {
-	while(i!==size/2) {
+	while(i!==size) {
 		let spaceHash = ' #';
         let hashSpace = '# '
-          console.log(spaceHash.repeat(size/2));
-          console.log(hashSpace.repeat(size/2));
+          console.log(spaceHash.repeat(size));
+          console.log(hashSpace.repeat(size));
           i++;
 
 	}
